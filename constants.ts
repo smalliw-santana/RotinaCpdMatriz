@@ -48,13 +48,59 @@ export const SALES_IMPORT_LIST: SalesImportItem[] = [
 ];
 
 export const MAG_SECTIONS: DepartmentSection[] = [
-  { id: '210', name: 'CELULAR' },
-  { id: '211', name: 'ELETRODOMESTICO' },
-  { id: '213', name: 'FOGÕES/DEPURADOR' },
-  { id: '240', name: 'CAMA' },
-  { id: '241', name: 'MESA' },
-  { id: '242', name: 'BANHO' },
-  { id: '297', name: 'PERF GERAL' },
+{ id: '210', name: 'CELULAR' },
+{ id: '211', name: 'ELETRODOMESTICO ' },
+{ id: '213', name: 'FOGÕES/DEPURADOR  ' },
+{ id: '215', name: 'IMAGEM ' },
+{ id: '216', name: 'SOM ' },
+{ id: '217', name: 'CONDICIONADOR DE AR ' },
+{ id: '218', name: 'VENTILACAO ' },
+{ id: '219', name: 'ELETRICO DE BELEZA ' },
+{ id: '221', name: 'INFORMATICA ' },
+{ id: '210', name: 'CELULAR' },
+{ id: '211', name: 'ELETRODOMESTICO ' },
+{ id: '213', name: 'FOGÕES/DEPURADOR  ' },
+{ id: '215', name: 'IMAGEM ' },
+{ id: '216', name: 'SOM ' },
+{ id: '217', name: 'CONDICIONADOR DE AR ' },
+{ id: '218', name: 'VENTILACAO ' },
+{ id: '219', name: 'ELETRICO DE BELEZA ' },
+{ id: '221', name: 'INFORMATICA ' },
+{ id: '229', name: 'CAMPING ' },
+{ id: '229', name: 'CAMPING ' },
+{ id: '231', name: 'FERRAMENTAS' },
+{ id: '232', name: 'BICICLETA' },
+{ id: '233', name: 'PAPELARIA' },
+{ id: '240', name: 'CAMA' },
+{ id: '241', name: 'MESA' },
+{ id: '242', name: 'BANHO' },
+{ id: '243', name: 'MESA E BAR' },
+{ id: '244', name: 'COPA E COZINHA' },
+{ id: '245', name: 'FORNO E FOGÃO' },
+{ id: '246', name: 'BANHEIRO E LAVANDERIA' },
+{ id: '247', name: 'UTILIDADES PLASTICAS' },
+{ id: '268', name: 'CALCADOS INFANTIL' },
+{ id: '269', name: 'TÊNIS' },
+{ id: '270', name: 'CALCADOS FEMININOS' },
+{ id: '271', name: 'CALCADOS MASCULINOS' },
+{ id: '273', name: 'BEST SELLER CALCADOS' },
+{ id: '294', name: 'PERF PRESTIGIO' },
+{ id: '295', name: 'PERF SEMI PRESTIGIO' },
+{ id: '296', name: 'ARTIGOS P/ CABELO' },
+{ id: '297', name: 'PERF GERAL' },
+{ id: '298', name: 'ACESSORIOS FEMININOS' },
+{ id: '299', name: 'ACESSORIOS MASCULINOS' },
+{ id: '300', name: 'ARTIGOS P/ VIAGEM' },
+{ id: '310', name: 'PUERICULTURA PESADA' },
+{ id: '313', name: 'BEST SELLER CAMEBA' },
+{ id: '318', name: 'LINHA PREMIUM CAMA' },
+{ id: '319', name: 'LINHA PREMIUM BANHO' },
+{ id: '351', name: 'MAQUIAGEM' },
+{ id: '352', name: 'CABELOS' },
+{ id: '023', name: 'HIGIENE PESSOAL' },
+{ id: '025', name: 'ARTIGOS P/ CABELO' },
+{ id: '027', name: 'PERFUMARIA' },
+{ id: '071', name: 'ARTIGO INFANTIL' }
 ];
 
 export const HC_SECTIONS: DepartmentSection[] = [
@@ -71,4 +117,13 @@ export const STOCK_EXCLUSION_ALL: string[] = [
 export const STOCK_EXCLUSION_SAT: string[] = [
   '3-5', '4-3', '6-0', '7-8', '9-4', '12-4', '15-9', '17-5', '18-3', '19-1', '21-3', '24-8', 
   '28-0', '31-0', '32-9', '33-7', '37-0', '38-8', '40-0', '42-6', '200-3', '36-1', '201-1'
+];
+
+export const RESPONSIBLE_OPTIONS: string[] = [
+  'WILLAMS',
+  'YURI',
+  'TIAGO',
+  'JERSON',
+  'JORGE',
+  'YGOR'
 ];

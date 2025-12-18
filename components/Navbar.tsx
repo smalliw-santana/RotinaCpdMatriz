@@ -14,12 +14,24 @@ export const Navbar: React.FC = () => {
     { label: 'Ocorrências', href: '#ocorrencias' },
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      // Update URL hash without jumping
+      window.history.pushState(null, '', href);
+    }
+  };
+
   return (
     <nav className="bg-slate-900 text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo / Title */}
-          <div className="flex-shrink-0 font-bold text-xl tracking-wider flex items-center gap-2">
+          <div className="flex-shrink-0 font-bold text-xl tracking-wider flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <span className="bg-blue-600 text-white px-2 py-1 rounded text-sm">CPD</span>
             <span className="hidden sm:inline">Rotina Noturna</span>
           </div>
@@ -30,7 +42,8 @@ export const Navbar: React.FC = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-300 hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-gray-300 hover:text-white hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200"
               >
                 {item.label}
               </a>
@@ -58,8 +71,8 @@ export const Navbar: React.FC = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-300 hover:text-white hover:bg-slate-700 block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-gray-300 hover:text-white hover:bg-slate-700 block px-3 py-2 rounded-md text-base font-bold"
               >
                 {item.label}
               </a>
