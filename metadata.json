@@ -1,0 +1,5 @@
+{
+  "name": "CPD Rotina Noturna",
+  "description": "Digital checklist application for the CPD Night Routine, featuring time tracking, branch management, and task logging.",
+  "requestFramePermissions": []
+}
